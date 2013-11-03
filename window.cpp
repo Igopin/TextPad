@@ -122,11 +122,6 @@ void window::WMSize(HWND &hwnd, UINT &message, WPARAM &wParam, LPARAM &lParam)
     if (start_str_pos < 0)
       start_str_pos = 0;
   }
-  //delta = cur_horz_pos - new_horz_range;
-  //if (delta > 0)
-  //  start_str_pos -= delta;
-  //else
-  //  start_str_pos += delta;
 
   SendMessage(hStatWnd, WM_SIZE, wParam, lParam);
 
